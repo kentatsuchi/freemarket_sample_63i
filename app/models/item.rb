@@ -10,8 +10,8 @@ class Item < ApplicationRecord
   accepts_nested_attributes_for :regions
 
   #userテーブルの「id」とitemsテーブルの「buyer_id」「saler_id」を紐付ける
-  belongs_to :seller, class_name: "User"
-  belongs_to :buyer, class_name: "User"
+  # belongs_to :seller, class_name: "User"    出品できないので一度コメントアウト！！
+  # belongs_to :buyer, class_name: "User"
 
   validates :seller_id,{presence:true}
 
