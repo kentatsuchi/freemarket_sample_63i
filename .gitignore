@@ -12,3 +12,7 @@
 
 public/uploads/*
 /.env
+
+log/*
+log/**/*
+tmp/**/*
