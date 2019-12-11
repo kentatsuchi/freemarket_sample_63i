@@ -1,0 +1,27 @@
+= render 'shared/header', header: @header
+= render 'layouts/exhibit-button'
+%main
+  .center-item
+    = image_tag '/img/top_campaign.jpg',class: ''
+    = image_tag '/img/sns_01_Fotor.jpg',class: ''
+    = image_tag '/img/mercari_header.png', class: ''
+  .contents
+    .items
+      .items__header
+        %h1 人気のカテゴリー
+        .items__header__tag
+          %ul
+            %li レディース
+            %li メンズ
+            %li 家電・スマホ・カメラ
+            %li おもちゃ・ホビー・グッズ
+      .items__main
+        .items__main__title
+          %h2 新着アイテム
+          %p
+            もっとみる
+            %span.fas.fa-angle-right
+        .items__main__wrapper
+          = render 'home-index'
+
+= render 'shared/footer'

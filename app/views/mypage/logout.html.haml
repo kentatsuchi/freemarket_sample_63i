@@ -1,0 +1,12 @@
+= render 'shared/header', header: @header
+= render 'layouts/exhibit-button'
+  
+.mypage-container
+  = render 'shared/mypage-side'
+  
+  .mypage-content
+    .logout-form
+      = link_to destroy_user_session_path, method: :delete, class: 'btn-red' do
+        ログアウト
+
+= render "shared/footer"

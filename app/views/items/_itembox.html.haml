@@ -1,0 +1,10 @@
+-@related_items.each do |related_item| 
+  = link_to item_path(related_item.id),class:"items-box" do
+    =image_tag related_item.images[0].image.url
+    .items-body
+      .items-body__name
+        = related_item.name
+      .items-body__price
+        ¥
+        = related_item.price
+        %i.far.fa-heart.fa-1x
