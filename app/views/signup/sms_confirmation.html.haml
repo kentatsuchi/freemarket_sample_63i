@@ -13,7 +13,7 @@
                 = f.fields_for :phonenumber do |t|
                   = t.label :携帯電話の番号
                   = t.telephone_field :phone_number, placeholder: "携帯電話の番号を入力" , autofocus: true, class: "login-input-text input-default"
-                  = @user.errors.full_messages_for(:phone_number).first
+                  = @user.errors.full_messages_for(:"phonenumber.phone_number").first
                   %p.identification-text
                     本人確認のため、携帯電話のSMS(ショートメッセージサービス)を利用して認証を行います。
                 .form-group
