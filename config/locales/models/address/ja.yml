@@ -1,13 +1,17 @@
 ja:
   activerecord:
     models:
-      personal: ユーザー詳細
+      address:
     attributes:
-      personal:
+      address:
         id: ID
-        birthday: 生年月日
-        email: メールアドレス
-        salon_id: サロン
-        password: パスワード
-        created_at: 登録日時
-        updated_at: 更新日時
+        address_family_name_kanji: 名字(漢字)
+        address_first_name_kanji: 名前(漢字)
+        address_family_name_kana: 名字(カナ)
+        address_first_name_kana: 名前(カナ)
+        postal_code: 郵便番号
+        region_id: 都道府県
+        city: 市区町村
+        district_number: 番地
+        address_building: 建物名
+        address_phone_number: 電話番号
