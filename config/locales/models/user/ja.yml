@@ -7,6 +7,6 @@ ja:
         id: ID
         nickname: ニックネーム
         email: メールアドレス
-        password: パスワード
+        encrypted_password: パスワード
         created_at: 登録日時
         updated_at: 更新日時

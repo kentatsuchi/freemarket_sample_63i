@@ -1,8 +1,6 @@
 ja:
   activerecord:
     models:
-    phonenumber:
+    phonenumber: 電話番号
     attributes:
-      phonenumber:
-        id: ID
-        phone_number: 電話番号
+      phonenumber: 電話番号
