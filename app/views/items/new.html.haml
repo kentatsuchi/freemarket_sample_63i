@@ -19,7 +19,7 @@
                   :preserve
                     ドラッグアンドドロップ
                     またはクリックしてファイルをアップロード
-                = i.file_field :image, multiple:true, type: "file" ,onchange: "previewFiles()", name: 'images[image][]', id: "upload-image", class: "upload-image", 'data-image': 0
+                = i.file_field :image, type: "file" ,onchange: "previewFiles()", name: 'images[image][]', id: "upload-image", class: "upload-image", 'data-image': 0
                 = image_tag "",height:"150",name:'preview0'
                 = image_tag "",height:"150",name:'preview1'
                 = image_tag "",height:"150",name:'preview2'
