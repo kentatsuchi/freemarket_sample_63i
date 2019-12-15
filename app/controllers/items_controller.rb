@@ -2,7 +2,7 @@ class ItemsController < ApplicationController
 
   before_action :move_to_index, except: :index
   
-  before_action :set_item,only: [:show,:edit,:destroy]
+  before_action :set_item,only: [:show,:edit,:update,:destroy]
 
 
   def index
