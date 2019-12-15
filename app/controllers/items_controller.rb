@@ -55,14 +55,14 @@ class ItemsController < ApplicationController
   end
 
   def edit
-    
+    @images = @item.images
   end
 
   def update
     if @item.seller_id == current_user.id && @item.update(update_item_params)
-      params[:images]['image'].each do |image|
-        @item.images.update(image: image, item_id: @item.id)
-      end
+      # params[:images]['image'].each do |image|
+      #   @item.images.update(image: image, item_id: @item.id)
+      # end
       redirect_to item_path(@item)
     else
       render :edit
@@ -94,7 +94,7 @@ class ItemsController < ApplicationController
       :profit,
       :condition,  
       :postage, 
-      images_attributes: [:id,:_destroy,:image],
+      images_attributes: [:image,:_destroy,:id],
       regions_attributes: [:name]
     ).merge(
       seller_id: current_user.id)
