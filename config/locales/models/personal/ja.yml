@@ -5,8 +5,8 @@ ja:
     attributes:
       personal:
         id: ID
-        family_name_kanji: 名字
-        first_name_kanji: 名前
-        family_name_kana: 名字(カナ)
-        first_name_kana: 名前(カナ)
+        family_name_kanji: 姓
+        first_name_kanji: 名
+        family_name_kana: 姓(カナ)
+        first_name_kana: 名(カナ)
         birthday: 生年月日
